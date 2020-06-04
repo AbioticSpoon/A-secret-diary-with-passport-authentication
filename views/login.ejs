@@ -1,0 +1,36 @@
+<!-- <h1>Welcome to Login page</h1>
+
+<form action="/login" method="POST">
+    <input type="text" name="username">
+    <input type="password" name="password">
+    <button type="submit">Login</button>
+</form> -->
+<%- include('./partials/_head_partial.ejs') %>
+<div class="container">
+    <div class="main">
+        <div class="form-gorup form-div">
+            <h1 class="text-capitalize text-light text-center">secret diary</h1>
+            <p class="font-weight-bold text-center text-light">Store your thoughts permanetly and securely</p>
+            <p class="font-weight-bold text-center text-light">Login using your username and password.</p>
+            <% if(message) {%>
+            <div class="alert alert-danger" role="alert">
+                <p class="text-center"><%= message.intro %> </p>
+                <p class="text-center"><%= message.message %> </p>
+            </div>
+            
+            <% } %>
+            <form action="/login" method="POST">
+                <input type="text" name="username" class="form-control mb-3" placeholder="Your Email">
+                <input type="password" name="password" class="form-control mb-3" placeholder="Your Password">
+                <div class="text-center"><button type="submit" class="btn btn-success">Login!</button></div>
+
+            </form>
+            <a class="font-weight-bold d-block text-center mt-3" href="/register">Sign up</a>
+        </div>
+    </div>
+
+   
+
+
+</div>
+<%- include('./partials/_footer_partial.ejs') %>

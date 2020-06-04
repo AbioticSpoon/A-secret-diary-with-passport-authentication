@@ -1,0 +1,28 @@
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background: url('https://images.pexels.com/photos/414144/pexels-photo-414144.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+	/* background-position: center; */
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+
+.form-div {
+	width: 40%;
+	margin: 0 auto;
+}
+
+.main {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@media only screen and (max-width: 780px) {
+	.form-div {
+		width: 70%;
+	}
+}
